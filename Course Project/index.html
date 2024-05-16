@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Bookstore</h1>
+    </header>
+
+    <main>
+        <!-- Book Search Form -->
+        <section id="bookSearch">
+            <input type="text" id="strSearchQuery" placeholder="Search for books" />
+            <button id="btnSearch">Search</button>
+            <div id="searchResults"></div>
+        </section>
+
+        <!-- Book Recommendations -->
+        <section id="bookRecommendations">
+            <button id="btnShowRecommendations">Show Recommendations</button>
+            <ul id="recommendationsList"></ul>
+        </section>
+
+        <!-- Book of the Month Details -->
+        <section id="bookOfTheMonth">
+            <button id="btnShowBookOfTheMonth">Book of The Month</button>
+            <div id="bookOfTheMonthDetails"></div>
+        </section>
+
+        <!-- Special Offers with Animation -->
+        <section id="specialOffers">
+            <h2>Special Offers</h2>
+            <div id="offersList"></div>
+        </section>
+
+        <!-- Current Date Display -->
+        <section id="dateDisplay">
+            <h2>Today's Date</h2>
+            <div id="currentDate"></div>
+        </section>
+
+        <!-- Book Purchase Form -->
+        <section id="bookPurchase">
+            <h2>Purchase Books</h2>
+            <form id="purchaseForm">
+                <input type="text" id="strCustomerName" placeholder="Your Name" required />
+                <input type="email" id="strCustomerEmail" placeholder="Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                <input type="text" id="strNumBooks" placeholder="Number of Books" required />
+                <input type="submit" id="btnPurchase" value="Purchase" disabled />
+            </form>
+            <div id="purchaseResult"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Bookstore. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
